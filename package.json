@@ -1,0 +1,19 @@
+{
+  "name": "constructor",
+  "version": "1.0.0",
+  "description": "javascript app",
+  "main": "index.js",
+  "scripts": {
+    "serve": "parcel ./src/index.html -p 1337 --open",
+    "build": "parcel build ./src/index.html"
+  },
+  "keywords": [
+    "js",
+    "npm"
+  ],
+  "author": "Bogdan",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
