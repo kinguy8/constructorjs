@@ -28,9 +28,6 @@ export const model = [
     //     alt: 'Picture'
     // }),
     // new ColumnsBlock([
-    //     'Приложение на чистом JavaScript, без использования библиотек',
-    //     'Узнаешь как работают принципы SOLID и ООП в JavaScript за один курс',
-    //     'JavaScript - это просто, интересно. Научись создавать любые UI своими руками'
     // ], {
     //     styles: {
     //         background: 'linear-gradient(to bottom, #8e2de2, #4a00e0)',
