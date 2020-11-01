@@ -17,7 +17,7 @@ export function css(styles = {}) {
 
 export function block(type) {
   return `
-      <form name="${type}">
+      <form name="${type}" id="${type}">
         <h5>${type}</h5>
         <div class="form-group">
           <input class="form-control form-control-sm" name="value" placeholder="value">
@@ -31,10 +31,23 @@ export function block(type) {
     `
 }
 
+export function navbarMenu(type) {
+  return `
+      <form name="${type}" id="${type}">
+        <h5>Меню сайта</h5>
+        <div class="form-group">
+          <input class="form-control form-control-sm" name="value" placeholder="Напишите список через пробел">
+        </div>
+        <button type="submit" class="btn btn-primary btn-sm">Добавить</button>
+      </form>
+      <hr />
+    `
+}
+
 export function navbar(content) {
   return `
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand mb-0 h1" href="#">JS Constructor</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,9 +60,8 @@ export function navbar(content) {
   `
 }
 
-export function menu(type){
-  console.log("typs: ", type)
+export function menu(type, link){
   return `
-  <a class="nav-link active" href="#">${type}<span class="sr-only">(current)</span></a>
+  <a class="nav-link active" href="${link}">${type}<span class="sr-only">(current)</span></a>
   `
 }

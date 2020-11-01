@@ -14,7 +14,7 @@ class Block {
 
 export class TitleBlock extends Block {
     constructor(value, options) {
-        super('title', value, options)
+        super('Title', value, options)
     }
 
     toHTML() {
@@ -25,7 +25,7 @@ export class TitleBlock extends Block {
 
 export class ImageBlock extends Block {
     constructor(value, options) {
-        super('image', value, options)
+        super('Image', value, options)
     }
 
     toHTML() {
@@ -36,7 +36,7 @@ export class ImageBlock extends Block {
 
 export class ColumnsBlock extends Block {
     constructor(value, options) {
-        super('columns', value, options)
+        super('Columns', value, options)
     }
 
     toHTML() {
@@ -47,7 +47,7 @@ export class ColumnsBlock extends Block {
 
 export class TextBlock extends Block {
     constructor(value, options) {
-        super('text', value, options)
+        super('Text', value, options)
     }
 
     toHTML() {
@@ -55,15 +55,14 @@ export class TextBlock extends Block {
     }
 }
 
-export class Navbar extends Block {
+export class MenuBlock extends Block {
     constructor (value, options) {
-        super('navbar', value, options)
+        super('Menu', value, options)
     }
 
     toHTML(){
-        console.log("VALUE:",this.value)
-        const html = this.value.map(item => menu(item))
-        console.log("html is ", html)
-        return navbar(html.join(''))
+        const array = this.value.split(" ")
+        let html = array.map(item => menu(item, item))
+        return navbar(html)
     }
 }
