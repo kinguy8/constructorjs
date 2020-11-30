@@ -1,2 +1,2 @@
 # CONSTRUCTOR NATIVE JAVASCRIPT
-### No motivation to continue =/
+### No motivation to continue 
