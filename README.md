@@ -1,2 +1,2 @@
-# constructorjs
-Website contstuctor js beta
+# CONSTRUCTOR NATIVE JAVASCRIPT
+### No motivation to continue =/
